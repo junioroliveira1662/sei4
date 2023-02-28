@@ -1,6 +1,6 @@
 FROM image-registry.openshift-image-registry.svc:5000/openshift/php:latest
 
-RUN dnf install php-sqlsrv -y
+RUN dnf install -y php php-sqlsrv
 
 # Copie o seu código fonte para o diretório de trabalho
 COPY . /app
